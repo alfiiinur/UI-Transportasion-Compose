@@ -74,11 +74,13 @@ fun EtiketPage() {
                     .fillMaxSize()
                     .padding(16.dp)
                     .clip(RoundedCornerShape(20.dp))
-                    .background(Color.White)
+                    .background(CardColor)
             ) {
                 Column(
                     modifier = Modifier
                         .padding(10.dp)
+                        .clip(RoundedCornerShape(20.dp))
+                        .background(Color.White)
                 ) {
                     Row(
                         modifier = Modifier
@@ -159,7 +161,7 @@ fun EtiketPage() {
                         Box(
                             modifier = Modifier
                                 .size(40.dp)
-                                .clip(CircleShape)
+                                .clip(RoundedCornerShape(topEnd = 20.dp, bottomEnd = 20.dp))
                                 .background(CardColor)
                         )
                         val pathEffect = PathEffect.dashPathEffect(floatArrayOf(10f, 10f), 0f)
@@ -174,7 +176,7 @@ fun EtiketPage() {
                         Box(
                             modifier = Modifier
                                 .size(40.dp)
-                                .clip(CircleShape)
+                                .clip(RoundedCornerShape(topStart = 20.dp, bottomStart = 20.dp))
                                 .background(CardColor)
                         )
                     }
@@ -190,7 +192,7 @@ fun EtiketPage() {
                         Box(
                             modifier = Modifier
                                 .size(40.dp)
-                                .clip(CircleShape)
+                                .clip(RoundedCornerShape(topEnd = 20.dp, bottomEnd = 20.dp))
                                 .background(CardColor)
                         )
                         val pathEffect = PathEffect.dashPathEffect(floatArrayOf(10f, 10f), 0f)
@@ -205,7 +207,7 @@ fun EtiketPage() {
                         Box(
                             modifier = Modifier
                                 .size(40.dp)
-                                .clip(CircleShape)
+                                .clip(RoundedCornerShape(topStart = 20.dp, bottomStart = 20.dp))
                                 .background(CardColor)
                         )
                     }
@@ -373,7 +375,7 @@ fun PenumpangCard() {
                 color = Color.Black
             )
         }
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(10.dp))
         Row(
             modifier = Modifier
                 .fillMaxWidth(),
